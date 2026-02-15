@@ -1,0 +1,4 @@
+{
+    "root": "setup/",
+    "setup": "setup/_base.setup.nut"
+}

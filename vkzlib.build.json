@@ -1,0 +1,7 @@
+{
+    "root": ".",
+    "setup": "setup/minimal.setup.nut",
+    "exclude": [
+        "setup/"
+    ]
+}

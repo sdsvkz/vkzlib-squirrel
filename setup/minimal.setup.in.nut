@@ -1,0 +1,3 @@
+if (::VKZLIB_CONFIG.ON_LOADED != null) {
+	::VKZLIB_CONFIG.ON_LOADED()
+}
