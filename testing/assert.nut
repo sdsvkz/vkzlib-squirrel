@@ -30,7 +30,7 @@ if (!("vkz" in getroottable)) {
 	::VKZLIB_CONFIG <- {
 
 		/**
-		 * @desc Path to external libraries storage
+		 * @desc Path to library storage
 		 * @type {string}
 		 */
 		LIB_DIR = "lib/",
