@@ -132,16 +132,13 @@ local function _getThrowVersion(requireFunc, name) {
  */
 ::require.lib <- _getThrowVersion(::require.nothrow.lib, "require.lib")
 
-local VKZLIB_DIR = ::VKZLIB_CONFIG.VKZLIB_DIR
-if (VKZLIB_DIR == null) {
-	VKZLIB_DIR = ::VKZLIB_CONFIG.LIB_DIR + "vkzlib/"
-}
-
 /**
  * @param {string} path Path to the file
  * @return {RequireResult} result
  */
-::require.nothrow.vkzlib <- @(path) _require(VKZLIB_DIR + path)
+::require.nothrow.vkzlib <- function (path) {
+	return _require(::vkz._internal.vkzlib(path))
+}
 
 /**
  * @param {string} path Path to the file
